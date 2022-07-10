@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from towns.models import Town
+
+admin.site.register(Town)
