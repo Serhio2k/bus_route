@@ -9,5 +9,5 @@ class Town(models.Model):
 
     class Meta:
         verbose_name = 'Місто'
-        verbose_name_plural = 'Міста'
+        verbose_name_plural = 'Міст'
         ordering = ['name']
