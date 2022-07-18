@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Town(models.Model):
@@ -9,5 +10,8 @@ class Town(models.Model):
 
     class Meta:
         verbose_name = 'Місто'
-        verbose_name_plural = 'Міст'
+        verbose_name_plural = 'Міста'
         ordering = ['name']
+
+    def get_absolute_url(self):
+        return reverse('towns:detail', kwargs={'pk': self.pk})
