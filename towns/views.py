@@ -55,7 +55,7 @@ class TownUpdateView(SuccessMessageMixin, UpdateView):
     form_class = TownForm
     template_name = 'towns/update.html'
     success_url = reverse_lazy('towns:home')
-    success_message = 'Місто успішно відредоговано'
+    success_message = 'Місто успішно відредаговано'
 
 
 class TownDeleteView(DeleteView):
