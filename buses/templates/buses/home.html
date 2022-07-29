@@ -1,25 +1,38 @@
 {%extends 'base.html' %}
-{% block title %}Список міст{% endblock %}
+{% block title %}Список автобусів{% endblock %}
 {% block content %}
-<h1>Список міст{{name}}</h1>
+<h1>Список автобусів{{name}}</h1>
 <div class="row">
-    <div class="col-md-4 mx-auto my-2" >
+    <div class="col-md-6 mx-auto my-2" >
         <table class="table table-striped">
+            <tr>
+                <th>Номер</th>
+                <th>Звідки</th>
+                <th>Куди</th>
+                <th>Час в дорозі</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+
        {% for object in page_obj %}
 
             <tr>
                 <td>
-                    <a href="{% url 'towns:detail' pk=object.pk%}">{{object.name}}</a>
-                </td>
+                <a href="{% url 'buses:detail' pk=object.pk%}">{{object.name}}</a>
+                <td>{{object.from_town}}</td>
+                <td>{{object.to_town}}</td>
+                <td>{{object.travel_time}}</td>
                 <td>
-                    <a href="{% url 'towns:update' pk=object.pk%}">
+                    <a href="{% url 'buses:update' pk=object.pk%}">
                         <button type="submit" class="btn btn-primary btn-sm">Редагувати</button>
                     </a>
                 </td>
                 <td>
-                    <a href="{% url 'towns:delete' pk=object.pk%}">
+                    <a href="{% url 'buses:delete' pk=object.pk%}">
                         <button type="submit" class="btn btn-danger btn-sm">Видалити</button>
                     </a>
+                </td>
+
                 </td>
             </tr>
         {% endfor %}
@@ -56,13 +69,5 @@
 
   </ul>
 </nav>
-<div class="row">
-    <div class="col-md-2">
-        <form action="{% url 'towns:create' %}" method="post"> {%csrf_token %}
-        {{ form.as_p}}
-    <input type="submit" value="Додати">
-
-</form></div>
-</div>
 
 {% endblock %}

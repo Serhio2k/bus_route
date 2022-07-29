@@ -1,0 +1,40 @@
+{%extends 'base.html' %}
+{% block title %}Пошук маршруту{% endblock %}
+{% block content %}
+<h1>Пошук маршруту{{name}}</h1>
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        {% if routes %}
+            <h3>Маршрут{% if routes|length != 1 %}и {% endif %} з м.{{towns.from_town}} в м.{{towns.to_town}}</h3>
+        <br>
+            {% for route in routes %}
+                {% if forloop.first %}<h4>Найкоротший маршрут</h4> {% endif %}
+                <h5>Час в дорозі {{route.total_time}}</h5>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Список автобусів за цим маршрутом</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                        {% for bus in route.buses %}
+                        <tr>
+                          <th scope="row">{{forloop.counter}}</th>
+                          <td>Автобус {{bus.name}} з м.{{bus.from_town}} в м.{{bus.to_town}}</td>
+                        </tr>
+                        {% endfor %}
+                  </tbody>
+                </table>
+        <br><br>
+
+            {% endfor %}
+        {% endif %}
+
+    </div>
+</div>
+{% url 'bus_routes' as action %}
+{% include 'form.html' with button='Знайти' action=action %}
+
+{% endblock %}
