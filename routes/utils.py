@@ -76,5 +76,5 @@ def get_routes(request, form) -> dict:
                 if time == route['total_time']:
                     sorted_routes.append(route)
     context['routes'] = sorted_routes
-    context['towns'] = {'from_town': from_town.name, 'to_town': to_town.name}
+    context['towns'] = {'from_town': from_town, 'to_town': to_town}
     return context

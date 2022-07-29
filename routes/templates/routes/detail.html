@@ -1,0 +1,30 @@
+{%extends 'base.html' %}
+{% block title %}Mаршрут{% endblock %}
+{% block content %}
+<h1>Mаршрут</h1>
+<div class="row">
+    <div class="col-md-8 mx-auto my-2" >
+        <table class="table table-striped">
+            <tr>
+                <th>Назва</th>
+                <th>Звідки</th>
+                <th>Куди</th>
+                <th>Час в дорозі</th>
+                <th>Список автобусів по маршруту</th>
+            </tr>
+            <tr>
+                <td>{{object.name}}</td>
+                <td>{{object.from_town}}</td>
+                <td>{{object.to_town}}</td>
+                <td>{{object.travel_times}}</td>
+                <td>
+                    {% for bus in object.buses.all %}
+                    <p>{{bus}}, час в дорозі {{bus.travel_time}}</p>
+                    {% endfor %}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
