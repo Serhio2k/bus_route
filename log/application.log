@@ -1,0 +1,17 @@
+DEBUG 2022-07-29 20:35:16,076 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-07-29 20:35:16,079 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-07-29 20:36:27,720 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-07-29 20:36:27,723 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-07-29 20:36:27,724 utils (0.000) SELECT "buses_bus"."id", "buses_bus"."name", "buses_bus"."travel_time", "buses_bus"."from_town_id", "buses_bus"."to_town_id", "towns_town"."id", "towns_town"."name", T3."id", T3."name" FROM "buses_bus" INNER JOIN "towns_town" ON ("buses_bus"."from_town_id" = "towns_town"."id") INNER JOIN "towns_town" T3 ON ("buses_bus"."to_town_id" = T3."id") ORDER BY "buses_bus"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-07-29 20:36:27,756 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-07-29 20:36:27,762 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-07-29 20:36:27,768 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-07-29 20:36:44,935 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-07-29 20:36:44,936 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-07-29 20:36:44,937 utils (0.000) SELECT "buses_bus"."id", "buses_bus"."name", "buses_bus"."travel_time", "buses_bus"."from_town_id", "buses_bus"."to_town_id", "towns_town"."id", "towns_town"."name", T3."id", T3."name" FROM "buses_bus" INNER JOIN "towns_town" ON ("buses_bus"."from_town_id" = "towns_town"."id") INNER JOIN "towns_town" T3 ON ("buses_bus"."to_town_id" = T3."id") ORDER BY "buses_bus"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-07-29 20:36:44,956 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-07-29 20:36:44,963 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-07-29 20:36:44,969 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
