@@ -1,4 +1,7 @@
 {% url 'towns:home' as towns_home_url%}
+{% url 'towns:create' as towns_create_url%}
+{% url 'buses:home' as buses_home_url%}
+{% url 'buses:create' as buses_create_url%}
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,37 +11,38 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/css/select2.min.css" rel="stylesheet" />
     <title>{% block title %}{% endblock %}</title>
-
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg container" style="background-color: #C1BCB4;">
+    <nav class="navbar navbar-expand-lg container" style="background-color: #d9af74;">
     <div class="container-fluid">
-    <a class="navbar-brand" href="{% url 'home' %}">Пошук маршрутів</a>
+    <a class="navbar-brand" href="{% url 'home' %}"><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Icon-mode-bus-default.svg" width="30" height="30" class="d-inline-block align-top" alt="" >Автобусні Маршрути</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link {% if request.path == towns_home_url%}active {% endif %}" aria-current="page" href="{% url 'towns:home' %}">Міста</a>
+          <a class="nav-link {% if request.path == towns_home_url%} active {% endif %}" aria-current="page" href="{% url 'towns:home' %}">Міста</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link {% if request.path == buses_home_url%} active {% endif %}" href="{% url 'buses:home' %}">Автобуси</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
         </li>
-        <li class="nav-item dropdown">
+
+        <li class="nav-item dropdown
+        {% if request.path == towns_create_url or request.path == buses_create_url %} active {% endif %}">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
+            Додати
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="{% url 'towns:create' %}">Нове Місто</a></li>
+            <li><a class="dropdown-item" href="{% url 'buses:create' %}">Новий автобус</a></li>
+
           </ul>
         </li>
       </ul>
@@ -89,9 +93,12 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/js/select2.min.js"></script>
+
     <script type="text/javascript">
+
             $(document).ready(function () {
             window.setTimeout(function() {
                 $(".alert").fadeTo(1000, 0).slideUp(1000, function(){
@@ -100,6 +107,13 @@
             }, 2000);
             });
     </script>
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+            $('.js-example-basic-multiple').select2();
+        });
+    </script>
+
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
@@ -108,6 +122,5 @@
 
   </body>
 </html>
-
 
 
