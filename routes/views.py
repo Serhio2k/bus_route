@@ -1,6 +1,9 @@
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
-from django.views.generic import ListView, DetailView
+from django.urls import reverse_lazy
+from django.views.generic import ListView, DetailView, DeleteView
 
 from buses.models import Bus
 from routes.forms import RouteForm, RouteModelForm
@@ -47,7 +50,7 @@ def add_routes(request):
                 initial={'from_town': towns[from_town_id],
                          'to_town': towns[to_town_id],
                          'travel_times': total_time,
-                         'buses': qs
+                         'buses': qs,
                          }
             )
             context['form'] = form
@@ -81,3 +84,12 @@ class RouteListView(ListView):
 class RouteDetailView(DetailView):
     queryset = Route.objects.all()
     template_name = 'routes/detail.html'
+
+
+class RouteDeleteView(LoginRequiredMixin, DeleteView):
+    model = Route
+    success_url = reverse_lazy('home')
+
+    def get(self, request, *args, **kwargs):
+        messages.success(request, 'Маршрут успішно видалено')
+        return self.delete(request, *args, **kwargs)

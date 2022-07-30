@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 
 from django.contrib import messages
@@ -22,7 +23,7 @@ __all__ = (
 
 def home(request):
     qs = Bus.objects.all()
-    lst = Paginator(qs, 2)
+    lst = Paginator(qs, 5)
     page_number = request.GET.get('page')
     page_obj = lst.get_page(page_number)
     context = {'page_obj': page_obj, }
@@ -40,7 +41,7 @@ class BusDetailView(DetailView):
     template_name = 'buses/detail.html'
 
 
-class BusCreateView(SuccessMessageMixin, CreateView):
+class BusCreateView(SuccessMessageMixin,LoginRequiredMixin, CreateView):
     model = Bus
     form_class = BusForm
     template_name = 'buses/create.html'
@@ -48,7 +49,7 @@ class BusCreateView(SuccessMessageMixin, CreateView):
     success_message = 'Автобус успішно створено'
 
 
-class BusUpdateView(SuccessMessageMixin, UpdateView):
+class BusUpdateView(SuccessMessageMixin,LoginRequiredMixin, UpdateView):
     model = Bus
     form_class = BusForm
     template_name = 'buses/update.html'
@@ -56,7 +57,7 @@ class BusUpdateView(SuccessMessageMixin, UpdateView):
     success_message = 'Автобус успішно відредаговано'
 
 
-class BusDeleteView(DeleteView):
+class BusDeleteView(LoginRequiredMixin,DeleteView):
     model = Bus
     # template_name = 'buses/delete.html'
     success_url = reverse_lazy('buses:home')

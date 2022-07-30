@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404
@@ -50,7 +51,7 @@ class TownCreateView(SuccessMessageMixin, CreateView):
     success_message = 'Місто успішно створено'
 
 
-class TownUpdateView(SuccessMessageMixin, UpdateView):
+class TownUpdateView(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
     model = Town
     form_class = TownForm
     template_name = 'towns/update.html'
@@ -58,7 +59,7 @@ class TownUpdateView(SuccessMessageMixin, UpdateView):
     success_message = 'Місто успішно відредаговано'
 
 
-class TownDeleteView(DeleteView):
+class TownDeleteView(LoginRequiredMixin, DeleteView):
     model = Town
     # template_name = 'towns/delete.html'
     success_url = reverse_lazy('towns:home')

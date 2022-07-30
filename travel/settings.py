@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'towns',
     'buses',
     'routes',
+    'accounts',
 
 ]
 

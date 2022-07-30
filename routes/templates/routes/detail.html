@@ -1,9 +1,10 @@
 {%extends 'base.html' %}
 {% block title %}Mаршрут{% endblock %}
+
 {% block content %}
 <h1>Mаршрут</h1>
 <div class="row">
-    <div class="col-md-8 mx-auto my-2" >
+    <div class="col-md-12 mx-auto my-2" >
         <table class="table table-striped">
             <tr>
                 <th>Назва</th>
@@ -11,6 +12,7 @@
                 <th>Куди</th>
                 <th>Час в дорозі</th>
                 <th>Список автобусів по маршруту</th>
+                <th>&nbsp;</th>
             </tr>
             <tr>
                 <td>{{object.name}}</td>
@@ -19,8 +21,15 @@
                 <td>{{object.travel_times}}</td>
                 <td>
                     {% for bus in object.buses.all %}
-                    <p>{{bus}}, час в дорозі {{bus.travel_time}}</p>
+                        <p>{{bus}}, час в дорозі {{bus.travel_time}}</p>
                     {% endfor %}
+                </td>
+                <td>
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'delete' pk=object.pk%}">
+                        <button type="submit" class="btn btn-danger btn-sm">Видалити</button>
+                    </a>
+                    {% endif %} &nbsp;
                 </td>
             </tr>
         </table>
