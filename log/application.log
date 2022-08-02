@@ -18503,3 +18503,878 @@ DEBUG 2022-08-02 15:41:37,366 utils (0.000)
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None; alias=default
 DEBUG 2022-08-02 15:41:37,366 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:02:23,455 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:02:23,455 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:02:25,433 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:02:25.430062' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:02:25.430062', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:02:25,435 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:02:25,457 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:02:25,465 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:02:25,471 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:04:34,471 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:04:34,471 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-08-02 16:04:34,473 utils (0.000) SELECT "buses_bus"."id", "buses_bus"."name", "buses_bus"."travel_time", "buses_bus"."from_town_id", "buses_bus"."to_town_id", "towns_town"."id", "towns_town"."name", T3."id", T3."name" FROM "buses_bus" INNER JOIN "towns_town" ON ("buses_bus"."from_town_id" = "towns_town"."id") INNER JOIN "towns_town" T3 ON ("buses_bus"."to_town_id" = T3."id") ORDER BY "buses_bus"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:04:34,481 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:04:34.480721' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:04:34.480721', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:04:34,483 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:04:34,537 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:04:34,543 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:04:34,549 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:04:42,537 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" IN (17, 6) ORDER BY "towns_town"."name" ASC; args=(17, 6); alias=default
+DEBUG 2022-08-02 16:04:42,543 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:04:42.543217' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:04:42.543217', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:04:42,545 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:04:42,557 utils (0.000) SELECT "buses_bus"."id", "buses_bus"."name", "buses_bus"."travel_time", "buses_bus"."from_town_id", "buses_bus"."to_town_id", "towns_town"."id", "towns_town"."name", T3."id", T3."name" FROM "buses_bus" INNER JOIN "towns_town" ON ("buses_bus"."from_town_id" = "towns_town"."id") INNER JOIN "towns_town" T3 ON ("buses_bus"."to_town_id" = T3."id") WHERE "buses_bus"."id" IN (25, 17) ORDER BY "buses_bus"."travel_time" ASC; args=(25, 17); alias=default
+DEBUG 2022-08-02 16:04:42,558 utils (0.000) SELECT "buses_bus"."id", "buses_bus"."name", "buses_bus"."travel_time", "buses_bus"."from_town_id", "buses_bus"."to_town_id" FROM "buses_bus" ORDER BY "buses_bus"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:04:42,559 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:04:42,560 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:04:42,560 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 8 LIMIT 21; args=(8,); alias=default
+DEBUG 2022-08-02 16:04:42,561 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 11 LIMIT 21; args=(11,); alias=default
+DEBUG 2022-08-02 16:04:42,562 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:04:42,563 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:04:42,564 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 13 LIMIT 21; args=(13,); alias=default
+DEBUG 2022-08-02 16:04:42,565 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-08-02 16:04:42,566 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 12 LIMIT 21; args=(12,); alias=default
+DEBUG 2022-08-02 16:04:42,566 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 14 LIMIT 21; args=(14,); alias=default
+DEBUG 2022-08-02 16:04:42,567 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:04:42,568 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 13 LIMIT 21; args=(13,); alias=default
+DEBUG 2022-08-02 16:04:42,568 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 8 LIMIT 21; args=(8,); alias=default
+DEBUG 2022-08-02 16:04:42,569 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-08-02 16:04:42,570 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2022-08-02 16:04:42,570 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 13 LIMIT 21; args=(13,); alias=default
+DEBUG 2022-08-02 16:04:42,571 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 16 LIMIT 21; args=(16,); alias=default
+DEBUG 2022-08-02 16:04:42,572 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-08-02 16:04:42,573 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 8 LIMIT 21; args=(8,); alias=default
+DEBUG 2022-08-02 16:04:42,573 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:04:42,574 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:04:42,575 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 14 LIMIT 21; args=(14,); alias=default
+DEBUG 2022-08-02 16:04:42,575 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 12 LIMIT 21; args=(12,); alias=default
+DEBUG 2022-08-02 16:04:42,576 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:04:42,577 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 16 LIMIT 21; args=(16,); alias=default
+DEBUG 2022-08-02 16:04:42,577 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2022-08-02 16:04:42,578 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:04:42,579 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 11 LIMIT 21; args=(11,); alias=default
+DEBUG 2022-08-02 16:04:42,580 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 14 LIMIT 21; args=(14,); alias=default
+DEBUG 2022-08-02 16:04:42,581 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2022-08-02 16:04:42,581 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 16 LIMIT 21; args=(16,); alias=default
+DEBUG 2022-08-02 16:04:42,582 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 11 LIMIT 21; args=(11,); alias=default
+DEBUG 2022-08-02 16:04:42,583 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 12 LIMIT 21; args=(12,); alias=default
+DEBUG 2022-08-02 16:04:47,177 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:04:47,178 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-08-02 16:04:47,179 utils (0.000) SELECT "buses_bus"."id", "buses_bus"."name", "buses_bus"."travel_time", "buses_bus"."from_town_id", "buses_bus"."to_town_id" FROM "buses_bus" WHERE "buses_bus"."id" IN (25, 17) ORDER BY "buses_bus"."travel_time" ASC; args=(25, 17); alias=default
+DEBUG 2022-08-02 16:04:47,181 utils (0.000) SELECT (1) AS "a" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 1; args=(17,); alias=default
+DEBUG 2022-08-02 16:04:47,181 utils (0.000) SELECT (1) AS "a" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 1; args=(6,); alias=default
+DEBUG 2022-08-02 16:04:47,182 utils (0.000) SELECT (1) AS "a" FROM "routes_route" WHERE "routes_route"."name" = '20' LIMIT 1; args=('20',); alias=default
+DEBUG 2022-08-02 16:04:47,184 utils (0.000) INSERT INTO "routes_route" ("name", "travel_times", "from_town_id", "to_town_id") SELECT '20', 38, 17, 6 RETURNING "routes_route"."id"; args=('20', 38, 17, 6); alias=default
+DEBUG 2022-08-02 16:04:47,187 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:04:47,188 utils (0.000) SELECT "buses_bus"."id" FROM "buses_bus" INNER JOIN "routes_route_buses" ON ("buses_bus"."id" = "routes_route_buses"."bus_id") WHERE "routes_route_buses"."route_id" = 45 ORDER BY "buses_bus"."travel_time" ASC; args=(45,); alias=default
+DEBUG 2022-08-02 16:04:47,190 utils (0.000) INSERT OR IGNORE INTO "routes_route_buses" ("route_id", "bus_id") SELECT 45, 17 UNION ALL SELECT 45, 25; args=(45, 17, 45, 25); alias=default
+DEBUG 2022-08-02 16:04:47,206 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:04:47.204168' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:04:47.204168', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:04:47,207 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:04:47,217 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:04:47,223 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:04:47,229 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:04:52,153 utils (0.000) SELECT COUNT(*) AS "__count" FROM "routes_route"; args=(); alias=default
+DEBUG 2022-08-02 16:04:52,159 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:04:52.158462' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:04:52.158462', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:04:52,159 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:04:52,161 utils (0.000) SELECT "routes_route"."id", "routes_route"."name", "routes_route"."travel_times", "routes_route"."from_town_id", "routes_route"."to_town_id" FROM "routes_route" ORDER BY "routes_route"."travel_times" ASC LIMIT 6; args=(); alias=default
+DEBUG 2022-08-02 16:04:52,162 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:04:52,163 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:04:52,163 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:04:52,164 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:04:52,165 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:04:52,166 utils (0.015) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:04:52,166 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:04:52,167 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-08-02 16:04:52,168 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:04:52,169 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 16 LIMIT 21; args=(16,); alias=default
+DEBUG 2022-08-02 16:04:52,169 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-08-02 16:04:52,170 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 13 LIMIT 21; args=(13,); alias=default
+DEBUG 2022-08-02 16:04:55,579 utils (0.000) SELECT "routes_route"."id", "routes_route"."name", "routes_route"."travel_times", "routes_route"."from_town_id", "routes_route"."to_town_id" FROM "routes_route" WHERE "routes_route"."id" = 45 LIMIT 21; args=(45,); alias=default
+DEBUG 2022-08-02 16:04:55,584 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:04:55.584582' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:04:55.584582', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:04:55,585 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:04:55,587 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:04:55,587 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-08-02 16:04:55,588 utils (0.000) SELECT "buses_bus"."id", "buses_bus"."name", "buses_bus"."travel_time", "buses_bus"."from_town_id", "buses_bus"."to_town_id" FROM "buses_bus" INNER JOIN "routes_route_buses" ON ("buses_bus"."id" = "routes_route_buses"."bus_id") WHERE "routes_route_buses"."route_id" = 45 ORDER BY "buses_bus"."travel_time" ASC; args=(45,); alias=default
+DEBUG 2022-08-02 16:04:55,589 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:04:55,590 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:05:10,523 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:05:10.521191' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:05:10.521191', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:05:10,524 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:05:10,525 utils (0.000) SELECT "routes_route"."id", "routes_route"."name", "routes_route"."travel_times", "routes_route"."from_town_id", "routes_route"."to_town_id" FROM "routes_route" WHERE "routes_route"."id" = 45 LIMIT 21; args=(45,); alias=default
+DEBUG 2022-08-02 16:05:10,526 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:05:10,533 utils (0.000) DELETE FROM "routes_route_buses" WHERE "routes_route_buses"."route_id" IN (45); args=(45,); alias=default
+DEBUG 2022-08-02 16:05:10,533 utils (0.000) DELETE FROM "routes_route" WHERE "routes_route"."id" IN (45); args=(45,); alias=default
+DEBUG 2022-08-02 16:05:10,556 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:05:10.554191' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:05:10.554191', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:05:10,557 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:05:10,566 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:05:10,572 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:05:10,578 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:05:16,424 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:05:16.422313' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:05:16.422313', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:05:16,425 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:05:16,433 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:05:16,439 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:05:16,445 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:05:18,275 utils (0.016) SELECT COUNT(*) AS "__count" FROM "towns_town"; args=(); alias=default
+DEBUG 2022-08-02 16:05:18,281 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:05:18.280515' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:05:18.280515', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:05:18,282 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:05:18,283 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC LIMIT 5; args=(); alias=default
+DEBUG 2022-08-02 16:05:19,517 utils (0.000) SELECT COUNT(*) AS "__count" FROM "buses_bus"; args=(); alias=default
+DEBUG 2022-08-02 16:05:19,523 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:05:19.522948' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:05:19.522948', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:05:19,523 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:05:19,525 utils (0.016) SELECT "buses_bus"."id", "buses_bus"."name", "buses_bus"."travel_time", "buses_bus"."from_town_id", "buses_bus"."to_town_id" FROM "buses_bus" ORDER BY "buses_bus"."travel_time" ASC LIMIT 5; args=(); alias=default
+DEBUG 2022-08-02 16:05:19,526 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:05:19,526 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:05:19,528 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:05:19,529 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:05:19,530 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 8 LIMIT 21; args=(8,); alias=default
+DEBUG 2022-08-02 16:05:19,530 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 11 LIMIT 21; args=(11,); alias=default
+DEBUG 2022-08-02 16:05:19,532 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 11 LIMIT 21; args=(11,); alias=default
+DEBUG 2022-08-02 16:05:19,532 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 8 LIMIT 21; args=(8,); alias=default
+DEBUG 2022-08-02 16:05:19,533 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:05:19,534 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 12 LIMIT 21; args=(12,); alias=default
+DEBUG 2022-08-02 16:05:20,817 utils (0.000) SELECT COUNT(*) AS "__count" FROM "routes_route"; args=(); alias=default
+DEBUG 2022-08-02 16:05:20,823 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:05:20.822472' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:05:20.822472', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:05:20,824 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:05:20,825 utils (0.000) SELECT "routes_route"."id", "routes_route"."name", "routes_route"."travel_times", "routes_route"."from_town_id", "routes_route"."to_town_id" FROM "routes_route" ORDER BY "routes_route"."travel_times" ASC LIMIT 5; args=(); alias=default
+DEBUG 2022-08-02 16:05:20,826 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:05:20,826 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:05:20,827 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:05:20,828 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:05:20,829 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:05:20,830 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:05:20,831 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:05:20,832 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 16 LIMIT 21; args=(16,); alias=default
+DEBUG 2022-08-02 16:05:20,834 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-08-02 16:05:20,835 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 13 LIMIT 21; args=(13,); alias=default
+DEBUG 2022-08-02 16:05:22,322 utils (0.000) SELECT COUNT(*) AS "__count" FROM "buses_bus"; args=(); alias=default
+DEBUG 2022-08-02 16:05:22,328 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:05:22.328495' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:05:22.328495', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:05:22,329 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:05:22,331 utils (0.000) SELECT "buses_bus"."id", "buses_bus"."name", "buses_bus"."travel_time", "buses_bus"."from_town_id", "buses_bus"."to_town_id" FROM "buses_bus" ORDER BY "buses_bus"."travel_time" ASC LIMIT 5; args=(); alias=default
+DEBUG 2022-08-02 16:05:22,331 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:05:22,332 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:05:22,333 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:05:22,334 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:05:22,335 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 8 LIMIT 21; args=(8,); alias=default
+DEBUG 2022-08-02 16:05:22,336 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 11 LIMIT 21; args=(11,); alias=default
+DEBUG 2022-08-02 16:05:22,337 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 11 LIMIT 21; args=(11,); alias=default
+DEBUG 2022-08-02 16:05:22,338 utils (0.015) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 8 LIMIT 21; args=(8,); alias=default
+DEBUG 2022-08-02 16:05:22,339 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:05:22,339 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 12 LIMIT 21; args=(12,); alias=default
+DEBUG 2022-08-02 16:12:04,736 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:12:04,736 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:12:19,415 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:12:19,415 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:12:19,415 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:12:19,415 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry') LIMIT 21; args=('admin', 'logentry'); alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,); alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission') LIMIT 21; args=('auth', 'permission'); alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group') LIMIT 21; args=('auth', 'group'); alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user') LIMIT 21; args=('auth', 'user'); alias=default
+DEBUG 2022-08-02 16:12:19,446 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype'); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session') LIMIT 21; args=('sessions', 'session'); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'towns'; args=('towns',); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'towns' AND "django_content_type"."model" = 'town') LIMIT 21; args=('towns', 'town'); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'towns'; args=('towns',); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'buses'; args=('buses',); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'buses' AND "django_content_type"."model" = 'bus') LIMIT 21; args=('buses', 'bus'); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8,); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'buses'; args=('buses',); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'routes'; args=('routes',); alias=default
+DEBUG 2022-08-02 16:12:19,462 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'routes' AND "django_content_type"."model" = 'route') LIMIT 21; args=('routes', 'route'); alias=default
+DEBUG 2022-08-02 16:12:19,477 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9,); alias=default
+DEBUG 2022-08-02 16:12:19,477 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'routes'; args=('routes',); alias=default
+DEBUG 2022-08-02 16:12:19,477 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',); alias=default
+DEBUG 2022-08-02 16:12:19,477 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',); alias=default
+DEBUG 2022-08-02 16:12:48,152 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:12:48,152 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:12:49,692 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:12:49.690048' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:12:49.690048', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:12:49,693 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 16:12:49,709 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:12:49,719 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:12:49,727 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:13:08,916 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:13:08,916 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:15:46,508 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:15:46,508 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:15:50,820 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:15:50,836 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:15:50,836 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:15:50,836 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:15:50,852 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:15:50,852 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:15:50,852 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:15:50,852 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+DEBUG 2022-08-02 16:15:50,852 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry') LIMIT 21; args=('admin', 'logentry'); alias=default
+DEBUG 2022-08-02 16:15:50,852 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,); alias=default
+DEBUG 2022-08-02 16:15:50,852 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+DEBUG 2022-08-02 16:15:50,852 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+DEBUG 2022-08-02 16:15:50,852 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission') LIMIT 21; args=('auth', 'permission'); alias=default
+DEBUG 2022-08-02 16:15:50,852 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group') LIMIT 21; args=('auth', 'group'); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user') LIMIT 21; args=('auth', 'user'); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype'); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session') LIMIT 21; args=('sessions', 'session'); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'towns'; args=('towns',); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'towns' AND "django_content_type"."model" = 'town') LIMIT 21; args=('towns', 'town'); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'towns'; args=('towns',); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'buses'; args=('buses',); alias=default
+DEBUG 2022-08-02 16:15:50,867 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'buses' AND "django_content_type"."model" = 'bus') LIMIT 21; args=('buses', 'bus'); alias=default
+DEBUG 2022-08-02 16:15:50,883 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8,); alias=default
+DEBUG 2022-08-02 16:15:50,883 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'buses'; args=('buses',); alias=default
+DEBUG 2022-08-02 16:15:50,883 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'routes'; args=('routes',); alias=default
+DEBUG 2022-08-02 16:15:50,883 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'routes' AND "django_content_type"."model" = 'route') LIMIT 21; args=('routes', 'route'); alias=default
+DEBUG 2022-08-02 16:15:50,883 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9,); alias=default
+DEBUG 2022-08-02 16:15:50,883 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'routes'; args=('routes',); alias=default
+DEBUG 2022-08-02 16:15:50,883 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',); alias=default
+DEBUG 2022-08-02 16:15:50,883 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',); alias=default
+DEBUG 2022-08-02 16:18:10,741 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:18:10,741 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:18:10,741 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:18:10,741 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:18:10,756 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:18:10,756 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:18:10,756 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry') LIMIT 21; args=('admin', 'logentry'); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission') LIMIT 21; args=('auth', 'permission'); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group') LIMIT 21; args=('auth', 'group'); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user') LIMIT 21; args=('auth', 'user'); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype'); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+DEBUG 2022-08-02 16:18:10,772 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session') LIMIT 21; args=('sessions', 'session'); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'towns'; args=('towns',); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'towns' AND "django_content_type"."model" = 'town') LIMIT 21; args=('towns', 'town'); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'towns'; args=('towns',); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'buses'; args=('buses',); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'buses' AND "django_content_type"."model" = 'bus') LIMIT 21; args=('buses', 'bus'); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8,); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'buses'; args=('buses',); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'routes'; args=('routes',); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'routes' AND "django_content_type"."model" = 'route') LIMIT 21; args=('routes', 'route'); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9,); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'routes'; args=('routes',); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',); alias=default
+DEBUG 2022-08-02 16:18:10,788 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',); alias=default
+DEBUG 2022-08-02 16:22:20,974 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 schema CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,604 schema CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+DEBUG 2022-08-02 16:22:26,604 utils (0.000) CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,619 schema CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2022-08-02 16:22:26,619 utils (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,619 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,619 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'contenttypes', '0001_initial', '2022-08-02 13:22:26.619859' RETURNING "django_migrations"."id"; args=('contenttypes', '0001_initial', '2022-08-02 13:22:26.619859'); alias=default
+DEBUG 2022-08-02 16:22:26,619 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,619 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,619 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,619 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,619 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,619 schema CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL); (params None)
+DEBUG 2022-08-02 16:22:26,619 utils (0.000) CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,619 schema CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params None)
+DEBUG 2022-08-02 16:22:26,619 utils (0.000) CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,619 schema CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2022-08-02 16:22:26,619 utils (0.000) CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params None)
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); (params ())
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE UNIQUE INDEX "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" ON "auth_group_permissions" ("group_id", "permission_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ())
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ())
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE UNIQUE INDEX "auth_user_groups_user_id_group_id_94350c0c_uniq" ON "auth_user_groups" ("user_id", "group_id"); (params ())
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE UNIQUE INDEX "auth_user_groups_user_id_group_id_94350c0c_uniq" ON "auth_user_groups" ("user_id", "group_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); (params ())
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); (params ())
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE UNIQUE INDEX "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" ON "auth_user_user_permissions" ("user_id", "permission_id"); (params ())
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE UNIQUE INDEX "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" ON "auth_user_user_permissions" ("user_id", "permission_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); (params ())
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,635 schema CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); (params ())
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,635 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0001_initial', '2022-08-02 13:22:26.635485' RETURNING "django_migrations"."id"; args=('auth', '0001_initial', '2022-08-02 13:22:26.635485'); alias=default
+DEBUG 2022-08-02 16:22:26,651 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,651 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,651 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,651 schema CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2022-08-02 16:22:26,651 utils (0.000) CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,651 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,651 schema CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2022-08-02 16:22:26,651 utils (0.000) CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,651 schema CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2022-08-02 16:22:26,651 utils (0.000) CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,651 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,651 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,651 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'admin', '0001_initial', '2022-08-02 13:22:26.651111' RETURNING "django_migrations"."id"; args=('admin', '0001_initial', '2022-08-02 13:22:26.651111'); alias=default
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,666 schema CREATE TABLE "new__django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_time" datetime NOT NULL); (params None)
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) CREATE TABLE "new__django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_time" datetime NOT NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,666 schema INSERT INTO "new__django_admin_log" ("id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time") SELECT "id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time" FROM "django_admin_log"; (params ())
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) INSERT INTO "new__django_admin_log" ("id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time") SELECT "id", "object_id", "object_repr", "action_flag", "change_message", "content_type_id", "user_id", "action_time" FROM "django_admin_log"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,666 schema DROP TABLE "django_admin_log"; (params ())
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) DROP TABLE "django_admin_log"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,666 schema ALTER TABLE "new__django_admin_log" RENAME TO "django_admin_log"; (params ())
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) ALTER TABLE "new__django_admin_log" RENAME TO "django_admin_log"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,666 schema CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,666 schema CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'admin', '0002_logentry_remove_auto_add', '2022-08-02 13:22:26.666734' RETURNING "django_migrations"."id"; args=('admin', '0002_logentry_remove_auto_add', '2022-08-02 13:22:26.666734'); alias=default
+DEBUG 2022-08-02 16:22:26,666 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,682 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,682 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,682 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,682 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,682 schema CREATE TABLE "new__django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0)); (params None)
+DEBUG 2022-08-02 16:22:26,682 utils (0.000) CREATE TABLE "new__django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "action_flag" smallint unsigned NOT NULL CHECK ("action_flag" >= 0)); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,682 schema INSERT INTO "new__django_admin_log" ("id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag") SELECT "id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag" FROM "django_admin_log"; (params ())
+DEBUG 2022-08-02 16:22:26,682 utils (0.000) INSERT INTO "new__django_admin_log" ("id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag") SELECT "id", "action_time", "object_id", "object_repr", "change_message", "content_type_id", "user_id", "action_flag" FROM "django_admin_log"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,682 schema DROP TABLE "django_admin_log"; (params ())
+DEBUG 2022-08-02 16:22:26,682 utils (0.000) DROP TABLE "django_admin_log"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,682 schema ALTER TABLE "new__django_admin_log" RENAME TO "django_admin_log"; (params ())
+DEBUG 2022-08-02 16:22:26,682 utils (0.000) ALTER TABLE "new__django_admin_log" RENAME TO "django_admin_log"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,682 schema CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+DEBUG 2022-08-02 16:22:26,682 utils (0.000) CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,697 schema CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'admin', '0003_logentry_add_action_flag_choices', '2022-08-02 13:22:26.697985' RETURNING "django_migrations"."id"; args=('admin', '0003_logentry_add_action_flag_choices', '2022-08-02 13:22:26.697985'); alias=default
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,697 schema CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); (params None)
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,697 schema INSERT INTO "new__django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type"; (params ())
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) INSERT INTO "new__django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,697 schema DROP TABLE "django_content_type"; (params ())
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) DROP TABLE "django_content_type"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,697 schema ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; (params ())
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,697 schema CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2022-08-02 16:22:26,697 utils (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,713 schema CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,713 schema INSERT INTO "new__django_content_type" ("id", "app_label", "model") SELECT "id", "app_label", "model" FROM "django_content_type"; (params ())
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) INSERT INTO "new__django_content_type" ("id", "app_label", "model") SELECT "id", "app_label", "model" FROM "django_content_type"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,713 schema DROP TABLE "django_content_type"; (params ())
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) DROP TABLE "django_content_type"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,713 schema ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; (params ())
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,713 schema CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'contenttypes', '0002_remove_content_type_name', '2022-08-02 13:22:26.713610' RETURNING "django_migrations"."id"; args=('contenttypes', '0002_remove_content_type_name', '2022-08-02 13:22:26.713610'); alias=default
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,713 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,729 schema CREATE TABLE "new__auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); (params None)
+DEBUG 2022-08-02 16:22:26,729 utils (0.000) CREATE TABLE "new__auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED, "codename" varchar(100) NOT NULL, "name" varchar(255) NOT NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,729 schema INSERT INTO "new__auth_permission" ("id", "content_type_id", "codename", "name") SELECT "id", "content_type_id", "codename", "name" FROM "auth_permission"; (params ())
+DEBUG 2022-08-02 16:22:26,729 utils (0.000) INSERT INTO "new__auth_permission" ("id", "content_type_id", "codename", "name") SELECT "id", "content_type_id", "codename", "name" FROM "auth_permission"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,729 schema DROP TABLE "auth_permission"; (params ())
+DEBUG 2022-08-02 16:22:26,729 utils (0.000) DROP TABLE "auth_permission"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,729 schema ALTER TABLE "new__auth_permission" RENAME TO "auth_permission"; (params ())
+DEBUG 2022-08-02 16:22:26,729 utils (0.000) ALTER TABLE "new__auth_permission" RENAME TO "auth_permission"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,729 schema CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); (params ())
+DEBUG 2022-08-02 16:22:26,729 utils (0.000) CREATE UNIQUE INDEX "auth_permission_content_type_id_codename_01ab375a_uniq" ON "auth_permission" ("content_type_id", "codename"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,729 schema CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+DEBUG 2022-08-02 16:22:26,729 utils (0.000) CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,729 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,729 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0002_alter_permission_name_max_length', '2022-08-02 13:22:26.729235' RETURNING "django_migrations"."id"; args=('auth', '0002_alter_permission_name_max_length', '2022-08-02 13:22:26.729235'); alias=default
+DEBUG 2022-08-02 16:22:26,729 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,744 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,744 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,744 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,744 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,744 schema CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "email" varchar(254) NOT NULL); (params None)
+DEBUG 2022-08-02 16:22:26,744 utils (0.000) CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "email" varchar(254) NOT NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,744 schema INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email" FROM "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,744 utils (0.000) INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "last_name", "is_staff", "is_active", "date_joined", "email" FROM "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,744 schema DROP TABLE "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,744 utils (0.000) DROP TABLE "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,744 schema ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,744 utils (0.000) ALTER TABLE "new__auth_user" RENAME TO "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,744 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,744 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0003_alter_user_email_max_length', '2022-08-02 13:22:26.744861' RETURNING "django_migrations"."id"; args=('auth', '0003_alter_user_email_max_length', '2022-08-02 13:22:26.744861'); alias=default
+DEBUG 2022-08-02 16:22:26,744 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,760 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,760 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,760 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,760 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,760 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,760 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0004_alter_user_username_opts', '2022-08-02 13:22:26.760485' RETURNING "django_migrations"."id"; args=('auth', '0004_alter_user_username_opts', '2022-08-02 13:22:26.760485'); alias=default
+DEBUG 2022-08-02 16:22:26,760 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,760 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,776 schema CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_login" datetime NULL); (params None)
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_login" datetime NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,776 schema INSERT INTO "new__auth_user" ("id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login") SELECT "id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login" FROM "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) INSERT INTO "new__auth_user" ("id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login") SELECT "id", "password", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "last_login" FROM "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,776 schema DROP TABLE "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) DROP TABLE "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,776 schema ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) ALTER TABLE "new__auth_user" RENAME TO "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0005_alter_user_last_login_null', '2022-08-02 13:22:26.776111' RETURNING "django_migrations"."id"; args=('auth', '0005_alter_user_last_login_null', '2022-08-02 13:22:26.776111'); alias=default
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,776 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0006_require_contenttypes_0002', '2022-08-02 13:22:26.791736' RETURNING "django_migrations"."id"; args=('auth', '0006_require_contenttypes_0002', '2022-08-02 13:22:26.791736'); alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0007_alter_validators_add_error_messages', '2022-08-02 13:22:26.791736' RETURNING "django_migrations"."id"; args=('auth', '0007_alter_validators_add_error_messages', '2022-08-02 13:22:26.791736'); alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,791 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,807 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,807 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,807 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,807 schema CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(150) NOT NULL UNIQUE); (params None)
+DEBUG 2022-08-02 16:22:26,807 utils (0.000) CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "username" varchar(150) NOT NULL UNIQUE); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,807 schema INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,807 utils (0.000) INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username") SELECT "id", "password", "last_login", "is_superuser", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "username" FROM "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,807 schema DROP TABLE "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,807 utils (0.000) DROP TABLE "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,807 schema ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,822 utils (0.016) ALTER TABLE "new__auth_user" RENAME TO "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,822 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,822 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0008_alter_user_username_max_length', '2022-08-02 13:22:26.822986' RETURNING "django_migrations"."id"; args=('auth', '0008_alter_user_username_max_length', '2022-08-02 13:22:26.822986'); alias=default
+DEBUG 2022-08-02 16:22:26,822 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,822 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,822 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,822 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,822 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,822 schema CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_name" varchar(150) NOT NULL); (params None)
+DEBUG 2022-08-02 16:22:26,822 utils (0.000) CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "last_name" varchar(150) NOT NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,822 schema INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name" FROM "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,822 utils (0.000) INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name") SELECT "id", "password", "last_login", "is_superuser", "username", "first_name", "email", "is_staff", "is_active", "date_joined", "last_name" FROM "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,822 schema DROP TABLE "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,822 utils (0.000) DROP TABLE "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,822 schema ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,838 utils (0.015) ALTER TABLE "new__auth_user" RENAME TO "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,838 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,838 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0009_alter_user_last_name_max_length', '2022-08-02 13:22:26.838614' RETURNING "django_migrations"."id"; args=('auth', '0009_alter_user_last_name_max_length', '2022-08-02 13:22:26.838614'); alias=default
+DEBUG 2022-08-02 16:22:26,838 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,838 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,838 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,838 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,838 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,838 schema CREATE TABLE "new__auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(150) NOT NULL UNIQUE); (params None)
+DEBUG 2022-08-02 16:22:26,838 utils (0.000) CREATE TABLE "new__auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(150) NOT NULL UNIQUE); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,838 schema INSERT INTO "new__auth_group" ("id", "name") SELECT "id", "name" FROM "auth_group"; (params ())
+DEBUG 2022-08-02 16:22:26,838 utils (0.000) INSERT INTO "new__auth_group" ("id", "name") SELECT "id", "name" FROM "auth_group"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,838 schema DROP TABLE "auth_group"; (params ())
+DEBUG 2022-08-02 16:22:26,838 utils (0.000) DROP TABLE "auth_group"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,838 schema ALTER TABLE "new__auth_group" RENAME TO "auth_group"; (params ())
+DEBUG 2022-08-02 16:22:26,854 utils (0.016) ALTER TABLE "new__auth_group" RENAME TO "auth_group"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,854 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,854 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0010_alter_group_name_max_length', '2022-08-02 13:22:26.854234' RETURNING "django_migrations"."id"; args=('auth', '0010_alter_group_name_max_length', '2022-08-02 13:22:26.854234'); alias=default
+DEBUG 2022-08-02 16:22:26,854 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,854 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,854 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,854 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,854 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,854 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,854 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0011_update_proxy_permissions', '2022-08-02 13:22:26.854234' RETURNING "django_migrations"."id"; args=('auth', '0011_update_proxy_permissions', '2022-08-02 13:22:26.854234'); alias=default
+DEBUG 2022-08-02 16:22:26,854 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,869 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,869 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,869 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,869 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,869 schema CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "last_name" varchar(150) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "first_name" varchar(150) NOT NULL); (params None)
+DEBUG 2022-08-02 16:22:26,869 utils (0.000) CREATE TABLE "new__auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NULL, "is_superuser" bool NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "last_name" varchar(150) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL, "first_name" varchar(150) NOT NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,869 schema INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "last_name", "email", "is_staff", "is_active", "date_joined", "first_name") SELECT "id", "password", "last_login", "is_superuser", "username", "last_name", "email", "is_staff", "is_active", "date_joined", "first_name" FROM "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,869 utils (0.000) INSERT INTO "new__auth_user" ("id", "password", "last_login", "is_superuser", "username", "last_name", "email", "is_staff", "is_active", "date_joined", "first_name") SELECT "id", "password", "last_login", "is_superuser", "username", "last_name", "email", "is_staff", "is_active", "date_joined", "first_name" FROM "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,869 schema DROP TABLE "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,869 utils (0.000) DROP TABLE "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,869 schema ALTER TABLE "new__auth_user" RENAME TO "auth_user"; (params ())
+DEBUG 2022-08-02 16:22:26,869 utils (0.000) ALTER TABLE "new__auth_user" RENAME TO "auth_user"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,869 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,869 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'auth', '0012_alter_user_first_name_max_length', '2022-08-02 13:22:26.869858' RETURNING "django_migrations"."id"; args=('auth', '0012_alter_user_first_name_max_length', '2022-08-02 13:22:26.869858'); alias=default
+DEBUG 2022-08-02 16:22:26,869 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 schema CREATE TABLE "towns_town" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL UNIQUE); (params None)
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) CREATE TABLE "towns_town" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL UNIQUE); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'towns', '0001_initial', '2022-08-02 13:22:26.885484' RETURNING "django_migrations"."id"; args=('towns', '0001_initial', '2022-08-02 13:22:26.885484'); alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 schema CREATE TABLE "buses_bus" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL UNIQUE, "travel_time" smallint unsigned NOT NULL CHECK ("travel_time" >= 0), "from_town_id" bigint NOT NULL REFERENCES "towns_town" ("id") DEFERRABLE INITIALLY DEFERRED, "to_town_id" bigint NOT NULL REFERENCES "towns_town" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) CREATE TABLE "buses_bus" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL UNIQUE, "travel_time" smallint unsigned NOT NULL CHECK ("travel_time" >= 0), "from_town_id" bigint NOT NULL REFERENCES "towns_town" ("id") DEFERRABLE INITIALLY DEFERRED, "to_town_id" bigint NOT NULL REFERENCES "towns_town" ("id") DEFERRABLE INITIALLY DEFERRED); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,885 schema CREATE INDEX "buses_bus_from_town_id_07d3a4de" ON "buses_bus" ("from_town_id"); (params ())
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) CREATE INDEX "buses_bus_from_town_id_07d3a4de" ON "buses_bus" ("from_town_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,885 schema CREATE INDEX "buses_bus_to_town_id_d8d9b1c2" ON "buses_bus" ("to_town_id"); (params ())
+DEBUG 2022-08-02 16:22:26,885 utils (0.000) CREATE INDEX "buses_bus_to_town_id_d8d9b1c2" ON "buses_bus" ("to_town_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'buses', '0001_initial', '2022-08-02 13:22:26.901109' RETURNING "django_migrations"."id"; args=('buses', '0001_initial', '2022-08-02 13:22:26.901109'); alias=default
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,901 schema CREATE TABLE "routes_route" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL UNIQUE, "travel_times" smallint unsigned NOT NULL CHECK ("travel_times" >= 0), "from_town_id" bigint NOT NULL REFERENCES "towns_town" ("id") DEFERRABLE INITIALLY DEFERRED, "to_town_id" bigint NOT NULL REFERENCES "towns_town" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) CREATE TABLE "routes_route" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL UNIQUE, "travel_times" smallint unsigned NOT NULL CHECK ("travel_times" >= 0), "from_town_id" bigint NOT NULL REFERENCES "towns_town" ("id") DEFERRABLE INITIALLY DEFERRED, "to_town_id" bigint NOT NULL REFERENCES "towns_town" ("id") DEFERRABLE INITIALLY DEFERRED); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,901 schema CREATE TABLE "routes_route_buses" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "route_id" bigint NOT NULL REFERENCES "routes_route" ("id") DEFERRABLE INITIALLY DEFERRED, "bus_id" bigint NOT NULL REFERENCES "buses_bus" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) CREATE TABLE "routes_route_buses" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "route_id" bigint NOT NULL REFERENCES "routes_route" ("id") DEFERRABLE INITIALLY DEFERRED, "bus_id" bigint NOT NULL REFERENCES "buses_bus" ("id") DEFERRABLE INITIALLY DEFERRED); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,901 schema CREATE INDEX "routes_route_from_town_id_692540f2" ON "routes_route" ("from_town_id"); (params ())
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) CREATE INDEX "routes_route_from_town_id_692540f2" ON "routes_route" ("from_town_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,901 schema CREATE INDEX "routes_route_to_town_id_e4f648c1" ON "routes_route" ("to_town_id"); (params ())
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) CREATE INDEX "routes_route_to_town_id_e4f648c1" ON "routes_route" ("to_town_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,901 schema CREATE UNIQUE INDEX "routes_route_buses_route_id_bus_id_22ea2c38_uniq" ON "routes_route_buses" ("route_id", "bus_id"); (params ())
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) CREATE UNIQUE INDEX "routes_route_buses_route_id_bus_id_22ea2c38_uniq" ON "routes_route_buses" ("route_id", "bus_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,901 schema CREATE INDEX "routes_route_buses_route_id_49eaf844" ON "routes_route_buses" ("route_id"); (params ())
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) CREATE INDEX "routes_route_buses_route_id_49eaf844" ON "routes_route_buses" ("route_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,901 schema CREATE INDEX "routes_route_buses_bus_id_f1b9db34" ON "routes_route_buses" ("bus_id"); (params ())
+DEBUG 2022-08-02 16:22:26,901 utils (0.000) CREATE INDEX "routes_route_buses_bus_id_f1b9db34" ON "routes_route_buses" ("bus_id"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'routes', '0001_initial', '2022-08-02 13:22:26.916735' RETURNING "django_migrations"."id"; args=('routes', '0001_initial', '2022-08-02 13:22:26.916735'); alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) PRAGMA foreign_keys = OFF; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) PRAGMA foreign_keys; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,916 schema CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params None)
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); args=None; alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) PRAGMA foreign_key_check; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,916 schema CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); args=(); alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) PRAGMA foreign_keys = ON; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") SELECT 'sessions', '0001_initial', '2022-08-02 13:22:26.916735' RETURNING "django_migrations"."id"; args=('sessions', '0001_initial', '2022-08-02 13:22:26.916735'); alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,916 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:22:26,932 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+DEBUG 2022-08-02 16:22:26,932 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,932 utils (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'admin', 'logentry' RETURNING "django_content_type"."id"; args=('admin', 'logentry'); alias=default
+DEBUG 2022-08-02 16:22:26,932 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry') LIMIT 21; args=('admin', 'logentry'); alias=default
+DEBUG 2022-08-02 16:22:26,932 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,); alias=default
+DEBUG 2022-08-02 16:22:26,932 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,947 utils (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add log entry', 1, 'add_logentry' UNION ALL SELECT 'Can change log entry', 1, 'change_logentry' UNION ALL SELECT 'Can delete log entry', 1, 'delete_logentry' UNION ALL SELECT 'Can view log entry', 1, 'view_logentry' RETURNING "auth_permission"."id"; args=('Can add log entry', 1, 'add_logentry', 'Can change log entry', 1, 'change_logentry', 'Can delete log entry', 1, 'delete_logentry', 'Can view log entry', 1, 'view_logentry'); alias=default
+DEBUG 2022-08-02 16:22:26,947 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+DEBUG 2022-08-02 16:22:26,947 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+DEBUG 2022-08-02 16:22:26,947 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,947 utils (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'auth', 'permission' UNION ALL SELECT 'auth', 'group' UNION ALL SELECT 'auth', 'user' RETURNING "django_content_type"."id"; args=('auth', 'permission', 'auth', 'group', 'auth', 'user'); alias=default
+DEBUG 2022-08-02 16:22:26,947 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission') LIMIT 21; args=('auth', 'permission'); alias=default
+DEBUG 2022-08-02 16:22:26,947 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group') LIMIT 21; args=('auth', 'group'); alias=default
+DEBUG 2022-08-02 16:22:26,947 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user') LIMIT 21; args=('auth', 'user'); alias=default
+DEBUG 2022-08-02 16:22:26,947 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4); alias=default
+DEBUG 2022-08-02 16:22:26,947 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,947 utils (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add permission', 2, 'add_permission' UNION ALL SELECT 'Can change permission', 2, 'change_permission' UNION ALL SELECT 'Can delete permission', 2, 'delete_permission' UNION ALL SELECT 'Can view permission', 2, 'view_permission' UNION ALL SELECT 'Can add group', 3, 'add_group' UNION ALL SELECT 'Can change group', 3, 'change_group' UNION ALL SELECT 'Can delete group', 3, 'delete_group' UNION ALL SELECT 'Can view group', 3, 'view_group' UNION ALL SELECT 'Can add user', 4, 'add_user' UNION ALL SELECT 'Can change user', 4, 'change_user' UNION ALL SELECT 'Can delete user', 4, 'delete_user' UNION ALL SELECT 'Can view user', 4, 'view_user' RETURNING "auth_permission"."id"; args=('Can add permission', 2, 'add_permission', 'Can change permission', 2, 'change_permission', 'Can delete permission', 2, 'delete_permission', 'Can view permission', 2, 'view_permission', 'Can add group', 3, 'add_group', 'Can change group', 3, 'change_group', 'Can delete group', 3, 'delete_group', 'Can view group', 3, 'view_group', 'Can add user', 4, 'add_user', 'Can change user', 4, 'change_user', 'Can delete user', 4, 'delete_user', 'Can view user', 4, 'view_user'); alias=default
+DEBUG 2022-08-02 16:22:26,963 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+DEBUG 2022-08-02 16:22:26,963 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+DEBUG 2022-08-02 16:22:26,963 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,963 utils (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'contenttypes', 'contenttype' RETURNING "django_content_type"."id"; args=('contenttypes', 'contenttype'); alias=default
+DEBUG 2022-08-02 16:22:26,963 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype'); alias=default
+DEBUG 2022-08-02 16:22:26,963 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,); alias=default
+DEBUG 2022-08-02 16:22:26,963 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,963 utils (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add content type', 5, 'add_contenttype' UNION ALL SELECT 'Can change content type', 5, 'change_contenttype' UNION ALL SELECT 'Can delete content type', 5, 'delete_contenttype' UNION ALL SELECT 'Can view content type', 5, 'view_contenttype' RETURNING "auth_permission"."id"; args=('Can add content type', 5, 'add_contenttype', 'Can change content type', 5, 'change_contenttype', 'Can delete content type', 5, 'delete_contenttype', 'Can view content type', 5, 'view_contenttype'); alias=default
+DEBUG 2022-08-02 16:22:26,963 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+DEBUG 2022-08-02 16:22:26,963 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+DEBUG 2022-08-02 16:22:26,963 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,979 utils (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'sessions', 'session' RETURNING "django_content_type"."id"; args=('sessions', 'session'); alias=default
+DEBUG 2022-08-02 16:22:26,979 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session') LIMIT 21; args=('sessions', 'session'); alias=default
+DEBUG 2022-08-02 16:22:26,979 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,); alias=default
+DEBUG 2022-08-02 16:22:26,979 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,979 utils (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add session', 6, 'add_session' UNION ALL SELECT 'Can change session', 6, 'change_session' UNION ALL SELECT 'Can delete session', 6, 'delete_session' UNION ALL SELECT 'Can view session', 6, 'view_session' RETURNING "auth_permission"."id"; args=('Can add session', 6, 'add_session', 'Can change session', 6, 'change_session', 'Can delete session', 6, 'delete_session', 'Can view session', 6, 'view_session'); alias=default
+DEBUG 2022-08-02 16:22:26,979 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+DEBUG 2022-08-02 16:22:26,979 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'towns'; args=('towns',); alias=default
+DEBUG 2022-08-02 16:22:26,979 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,979 utils (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'towns', 'town' RETURNING "django_content_type"."id"; args=('towns', 'town'); alias=default
+DEBUG 2022-08-02 16:22:26,979 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'towns' AND "django_content_type"."model" = 'town') LIMIT 21; args=('towns', 'town'); alias=default
+DEBUG 2022-08-02 16:22:26,994 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,); alias=default
+DEBUG 2022-08-02 16:22:26,994 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,994 utils (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add Місто', 7, 'add_town' UNION ALL SELECT 'Can change Місто', 7, 'change_town' UNION ALL SELECT 'Can delete Місто', 7, 'delete_town' UNION ALL SELECT 'Can view Місто', 7, 'view_town' RETURNING "auth_permission"."id"; args=('Can add Місто', 7, 'add_town', 'Can change Місто', 7, 'change_town', 'Can delete Місто', 7, 'delete_town', 'Can view Місто', 7, 'view_town'); alias=default
+DEBUG 2022-08-02 16:22:26,994 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'towns'; args=('towns',); alias=default
+DEBUG 2022-08-02 16:22:26,994 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'buses'; args=('buses',); alias=default
+DEBUG 2022-08-02 16:22:26,994 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,994 utils (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'buses', 'bus' RETURNING "django_content_type"."id"; args=('buses', 'bus'); alias=default
+DEBUG 2022-08-02 16:22:26,994 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'buses' AND "django_content_type"."model" = 'bus') LIMIT 21; args=('buses', 'bus'); alias=default
+DEBUG 2022-08-02 16:22:26,994 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8,); alias=default
+DEBUG 2022-08-02 16:22:26,994 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:26,994 utils (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add Автобус', 8, 'add_bus' UNION ALL SELECT 'Can change Автобус', 8, 'change_bus' UNION ALL SELECT 'Can delete Автобус', 8, 'delete_bus' UNION ALL SELECT 'Can view Автобус', 8, 'view_bus' RETURNING "auth_permission"."id"; args=('Can add Автобус', 8, 'add_bus', 'Can change Автобус', 8, 'change_bus', 'Can delete Автобус', 8, 'delete_bus', 'Can view Автобус', 8, 'view_bus'); alias=default
+DEBUG 2022-08-02 16:22:27,010 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'buses'; args=('buses',); alias=default
+DEBUG 2022-08-02 16:22:27,010 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'routes'; args=('routes',); alias=default
+DEBUG 2022-08-02 16:22:27,010 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:27,010 utils (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'routes', 'route' RETURNING "django_content_type"."id"; args=('routes', 'route'); alias=default
+DEBUG 2022-08-02 16:22:27,010 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'routes' AND "django_content_type"."model" = 'route') LIMIT 21; args=('routes', 'route'); alias=default
+DEBUG 2022-08-02 16:22:27,010 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9,); alias=default
+DEBUG 2022-08-02 16:22:27,010 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2022-08-02 16:22:27,010 utils (0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add Маршрут', 9, 'add_route' UNION ALL SELECT 'Can change Маршрут', 9, 'change_route' UNION ALL SELECT 'Can delete Маршрут', 9, 'delete_route' UNION ALL SELECT 'Can view Маршрут', 9, 'view_route' RETURNING "auth_permission"."id"; args=('Can add Маршрут', 9, 'add_route', 'Can change Маршрут', 9, 'change_route', 'Can delete Маршрут', 9, 'delete_route', 'Can view Маршрут', 9, 'view_route'); alias=default
+DEBUG 2022-08-02 16:22:27,010 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'routes'; args=('routes',); alias=default
+DEBUG 2022-08-02 16:22:40,697 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:22:40,697 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:22:42,845 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 13:22:42.842822' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 13:22:42.842822', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 16:22:42,859 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:22:42,864 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:22:42,868 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 16:22:45,636 utils (0.000) SELECT COUNT(*) AS "__count" FROM "buses_bus"; args=(); alias=default
+DEBUG 2022-08-02 16:22:47,150 utils (0.000) SELECT COUNT(*) AS "__count" FROM "towns_town"; args=(); alias=default
+DEBUG 2022-08-02 16:22:47,937 utils (0.000) SELECT COUNT(*) AS "__count" FROM "buses_bus"; args=(); alias=default
+DEBUG 2022-08-02 16:22:48,467 utils (0.000) SELECT COUNT(*) AS "__count" FROM "routes_route"; args=(); alias=default
+DEBUG 2022-08-02 16:22:49,251 utils (0.000) SELECT COUNT(*) AS "__count" FROM "buses_bus"; args=(); alias=default
+DEBUG 2022-08-02 16:22:49,715 utils (0.000) SELECT COUNT(*) AS "__count" FROM "towns_town"; args=(); alias=default
+DEBUG 2022-08-02 16:24:32,189 utils (0.000) SELECT COUNT(*) AS "__count" FROM "buses_bus"; args=(); alias=default
+DEBUG 2022-08-02 16:24:33,222 utils (0.000) SELECT COUNT(*) AS "__count" FROM "towns_town"; args=(); alias=default
+DEBUG 2022-08-02 16:24:34,006 utils (0.000) SELECT COUNT(*) AS "__count" FROM "buses_bus"; args=(); alias=default
+DEBUG 2022-08-02 16:24:34,586 utils (0.000) SELECT COUNT(*) AS "__count" FROM "routes_route"; args=(); alias=default
+DEBUG 2022-08-02 16:24:35,352 utils (0.000) SELECT COUNT(*) AS "__count" FROM "buses_bus"; args=(); alias=default
+DEBUG 2022-08-02 16:24:35,765 utils (0.000) SELECT COUNT(*) AS "__count" FROM "towns_town"; args=(); alias=default
+DEBUG 2022-08-02 16:27:17,965 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 16:27:17,965 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 16:27:19,871 utils (0.000) SELECT COUNT(*) AS "__count" FROM "towns_town"; args=(); alias=default
+DEBUG 2022-08-02 16:27:19,890 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC LIMIT 5; args=(); alias=default
+DEBUG 2022-08-02 16:27:21,270 utils (0.000) SELECT COUNT(*) AS "__count" FROM "routes_route"; args=(); alias=default
+DEBUG 2022-08-02 16:27:21,276 utils (0.000) SELECT "routes_route"."id", "routes_route"."name", "routes_route"."travel_times", "routes_route"."from_town_id", "routes_route"."to_town_id" FROM "routes_route" ORDER BY "routes_route"."travel_times" ASC LIMIT 3; args=(); alias=default
+DEBUG 2022-08-02 16:27:21,277 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:27:21,278 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:27:21,279 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:27:21,280 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 16 LIMIT 21; args=(16,); alias=default
+DEBUG 2022-08-02 16:27:21,280 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-08-02 16:27:21,281 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 13 LIMIT 21; args=(13,); alias=default
+DEBUG 2022-08-02 16:27:22,143 utils (0.000) SELECT COUNT(*) AS "__count" FROM "buses_bus"; args=(); alias=default
+DEBUG 2022-08-02 16:27:22,154 utils (0.000) SELECT "buses_bus"."id", "buses_bus"."name", "buses_bus"."travel_time", "buses_bus"."from_town_id", "buses_bus"."to_town_id" FROM "buses_bus" ORDER BY "buses_bus"."travel_time" ASC LIMIT 5; args=(); alias=default
+DEBUG 2022-08-02 16:27:22,156 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:27:22,157 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:27:22,158 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:27:22,158 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:27:22,159 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 8 LIMIT 21; args=(8,); alias=default
+DEBUG 2022-08-02 16:27:22,160 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 11 LIMIT 21; args=(11,); alias=default
+DEBUG 2022-08-02 16:27:22,161 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 11 LIMIT 21; args=(11,); alias=default
+DEBUG 2022-08-02 16:27:22,162 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 8 LIMIT 21; args=(8,); alias=default
+DEBUG 2022-08-02 16:27:22,164 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:27:22,164 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 12 LIMIT 21; args=(12,); alias=default
+DEBUG 2022-08-02 16:27:22,797 utils (0.000) SELECT COUNT(*) AS "__count" FROM "towns_town"; args=(); alias=default
+DEBUG 2022-08-02 16:27:22,803 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC LIMIT 5; args=(); alias=default
+DEBUG 2022-08-02 16:27:23,950 utils (0.000) SELECT COUNT(*) AS "__count" FROM "buses_bus"; args=(); alias=default
+DEBUG 2022-08-02 16:27:23,957 utils (0.000) SELECT "buses_bus"."id", "buses_bus"."name", "buses_bus"."travel_time", "buses_bus"."from_town_id", "buses_bus"."to_town_id" FROM "buses_bus" ORDER BY "buses_bus"."travel_time" ASC LIMIT 5; args=(); alias=default
+DEBUG 2022-08-02 16:27:23,957 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:27:23,957 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:27:23,959 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:27:23,960 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:27:23,960 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 8 LIMIT 21; args=(8,); alias=default
+DEBUG 2022-08-02 16:27:23,961 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 11 LIMIT 21; args=(11,); alias=default
+DEBUG 2022-08-02 16:27:23,962 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 11 LIMIT 21; args=(11,); alias=default
+DEBUG 2022-08-02 16:27:23,962 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 8 LIMIT 21; args=(8,); alias=default
+DEBUG 2022-08-02 16:27:23,963 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:27:23,964 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 12 LIMIT 21; args=(12,); alias=default
+DEBUG 2022-08-02 16:27:24,377 utils (0.000) SELECT COUNT(*) AS "__count" FROM "routes_route"; args=(); alias=default
+DEBUG 2022-08-02 16:27:24,386 utils (0.000) SELECT "routes_route"."id", "routes_route"."name", "routes_route"."travel_times", "routes_route"."from_town_id", "routes_route"."to_town_id" FROM "routes_route" ORDER BY "routes_route"."travel_times" ASC LIMIT 3; args=(); alias=default
+DEBUG 2022-08-02 16:27:24,387 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 17 LIMIT 21; args=(17,); alias=default
+DEBUG 2022-08-02 16:27:24,388 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 9 LIMIT 21; args=(9,); alias=default
+DEBUG 2022-08-02 16:27:24,389 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 15 LIMIT 21; args=(15,); alias=default
+DEBUG 2022-08-02 16:27:24,391 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 16 LIMIT 21; args=(16,); alias=default
+DEBUG 2022-08-02 16:27:24,392 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-08-02 16:27:24,393 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" WHERE "towns_town"."id" = 13 LIMIT 21; args=(13,); alias=default
