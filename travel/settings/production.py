@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
-import dj_database_url
 
 DB_NAME = os.environ.get('DB_MANE')
 DB_PASSWORD = os.environ.get('DB_PASSWORD')
@@ -32,7 +31,7 @@ SECRET_KEY = SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://buss-route.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -94,6 +93,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+import dj_database_url
 
 db = dj_database_url.config()
 DATABASES['default'].update(db)
