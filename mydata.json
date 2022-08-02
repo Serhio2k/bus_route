@@ -3,84 +3,84 @@
   "model": "towns.town",
   "pk": 3,
   "fields": {
-    "name": "╩ш┐т"
+    "name": "Київ"
   }
 },
 {
   "model": "towns.town",
   "pk": 6,
   "fields": {
-    "name": "┴єїрЁхёЄ"
+    "name": "Бухарест"
   }
 },
 {
   "model": "towns.town",
   "pk": 8,
   "fields": {
-    "name": "╦№т│т"
+    "name": "Львів"
   }
 },
 {
   "model": "towns.town",
   "pk": 9,
   "fields": {
-    "name": "┬рЁ°ртр"
+    "name": "Варшава"
   }
 },
 {
   "model": "towns.town",
   "pk": 11,
   "fields": {
-    "name": "╩рЄют│Ўх"
+    "name": "Катовіце"
   }
 },
 {
   "model": "towns.town",
   "pk": 12,
   "fields": {
-    "name": "╧рЁшц"
+    "name": "Париж"
   }
 },
 {
   "model": "towns.town",
   "pk": 13,
   "fields": {
-    "name": "╠рфЁшф"
+    "name": "Мадрид"
   }
 },
 {
   "model": "towns.town",
   "pk": 14,
   "fields": {
-    "name": "╦юэфюэ"
+    "name": "Лондон"
   }
 },
 {
   "model": "towns.town",
   "pk": 15,
   "fields": {
-    "name": "▓трэю-╘Ёрэъ│тё№ъ"
+    "name": "Івано-Франківськ"
   }
 },
 {
   "model": "towns.town",
   "pk": 16,
   "fields": {
-    "name": "╨шь"
+    "name": "Рим"
   }
 },
 {
   "model": "towns.town",
   "pk": 17,
   "fields": {
-    "name": "┴Ёхьхэ"
+    "name": "Бремен"
   }
 },
 {
   "model": "towns.town",
   "pk": 26,
   "fields": {
-    "name": "╧Ёрур"
+    "name": "Прага"
   }
 },
 {
