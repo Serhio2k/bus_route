@@ -18473,3 +18473,28 @@ DEBUG 2022-08-02 15:15:59,511 utils (0.000) SELECT "auth_user"."id", "auth_user"
 DEBUG 2022-08-02 15:15:59,519 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
 DEBUG 2022-08-02 15:15:59,525 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
 DEBUG 2022-08-02 15:15:59,531 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 15:32:47,898 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 15:32:47,898 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 15:32:51,243 utils (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-08-02 12:32:51.241551' AND "django_session"."session_key" = 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7') LIMIT 21; args=('2022-08-02 12:32:51.241551', 'c20znbjsclyioe7z0vjvp2n6ke6qoqt7'); alias=default
+DEBUG 2022-08-02 15:32:51,244 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-08-02 15:32:51,259 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 15:32:51,266 utils (0.000) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 15:32:51,275 utils (0.016) SELECT "towns_town"."id", "towns_town"."name" FROM "towns_town" ORDER BY "towns_town"."name" ASC; args=(); alias=default
+DEBUG 2022-08-02 15:37:19,430 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 15:37:19,432 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 15:38:27,433 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 15:38:27,436 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-08-02 15:38:59,459 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-08-02 15:38:59,475 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
