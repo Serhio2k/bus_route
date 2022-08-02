@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-p=nmg1$b*7-#ot_)e46powblnnayzez%6pjor7yy^r#8c81$d8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://buss-route.herokuapp.com/']
 
 # Application definition
 
@@ -95,6 +95,7 @@ DATABASES = {
 }
 
 import dj_database_url
+
 db = dj_database_url.config()
 DATABASES['default'].update(db)
 
