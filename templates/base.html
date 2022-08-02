@@ -6,7 +6,7 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+  <head >
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,10 +18,19 @@
 
     <title>{% block title %}{% endblock %}</title>
   </head>
-  <body>
+<!--  https://coolwallpapers.me/picsup/5749730-bus-wallpapers.jpg-->
+  <body  style="
+    background: url('https://wallpapercrafter.com/sizes/3840x2160/241384-hazy-silhouettes-of-mountain-ridges-on-a-foggy-day.jpg') no-repeat center center fixed;
+    height: 100vh;
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  ">
 
-    <nav class="navbar navbar-expand-lg container" style="background-color: #d9af74;">
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg container" style="background-color: #839bad;">
+    <div class="container-fluid ">
     <a class="navbar-brand" href="{% url 'home' %}"><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Icon-mode-bus-default.svg" width="30" height="30" class="d-inline-block align-top" alt="" >Автобусні Маршрути</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -111,6 +120,7 @@
 
      {% block content %}{% endblock %}
   </div>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
