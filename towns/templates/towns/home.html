@@ -66,7 +66,7 @@
     <div class="col-md-2">
         <form action="{% url 'towns:create' %}" method="post"> {%csrf_token %}
         {{ form.as_p}}
-    <input type="submit" value="Додати">
+    <button type="submit" class="btn btn-success">Додати</button>
 
 </form></div>
 </div>

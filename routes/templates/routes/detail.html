@@ -21,7 +21,7 @@
                 <td>{{object.travel_times}}</td>
                 <td>
                     {% for bus in object.buses.all %}
-                        <p>{{bus}}, час в дорозі {{bus.travel_time}}</p>
+                        <p>{{bus}}, час в дорозі {{bus.travel_time}} год.</p>
                     {% endfor %}
                 </td>
                 <td>
