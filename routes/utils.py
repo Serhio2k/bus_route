@@ -64,7 +64,7 @@ def get_routes(request, form) -> dict:
         if total_time <= travelling_time:
             routes.append(tmp)
     if not routes:
-        raise ValueError('Час в дорозі більший за заданий')
+        raise ValueError('За цим критерієм нічого не знайдено, спробуйте збільшити час в дорозі')
     sorted_routes = []
     if len(routes) == 1:
         sorted_routes = routes
