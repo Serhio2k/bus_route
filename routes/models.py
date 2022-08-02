@@ -1,5 +1,6 @@
 from django.db import models
 
+
 from towns.models import Town
 
 
@@ -15,8 +16,7 @@ class Route(models.Model):
                                 related_name='route_to_town_set',
                                 verbose_name='В яке місто')
 
-    buses = models.ManyToManyField(
-        'buses.Bus', verbose_name='Список автобусів')
+    buses = models.ManyToManyField('buses.Bus', verbose_name='Список автобусів')
 
     def __str__(self):
         return f'Маршрут {self.name} з міста {self.from_town}'

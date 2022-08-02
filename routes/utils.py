@@ -1,6 +1,7 @@
 from buses.models import Bus
 
 
+# Алгоритм пошуку в глубину
 def dfs_path(graph, start, goal):
     stack = [(start, [start])]
     while stack:
@@ -31,18 +32,18 @@ def get_routes(request, form) -> dict:
     towns = data['towns']
     travelling_time = data['travelling_time']
     all_ways = list(dfs_path(graph, from_town.id, to_town.id))
+    #  Немає жодного маршруту для даного пошуку
     if not len(all_ways):
-        #  Немає жодного маршруту для даного пошуку
         raise ValueError('Відсутній маршрут за даними критеріями пошуку')
+    # Якщо є міста через які потрібно проїхати
     if towns:
-        # Якщо є міста через які потрібно проїхати
         _towns = [town.id for town in towns]
         right_ways = []
         for route in all_ways:
             if all(town in route for town in _towns):
                 right_ways.append(route)
+        # Якщо список маршрутів пустий
         if not right_ways:
-            # Якщо список маршрутів пустий
             raise ValueError('Маршрут через ці міста - неможливий')
     else:
         right_ways = all_ways
@@ -52,8 +53,7 @@ def get_routes(request, form) -> dict:
         all_buses.setdefault((q.from_town_id, q.to_town_id), [])
         all_buses[(q.from_town_id, q.to_town_id)].append(q)
     for route in right_ways:
-        tmp = {}
-        tmp['buses'] = []
+        tmp = {'buses': []}
         total_time = 0
         for i in range(len(route) - 1):
             qs = all_buses[(route[i], route[i + 1])]
